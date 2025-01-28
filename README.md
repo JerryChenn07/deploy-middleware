@@ -10,6 +10,7 @@
 
 ## 项目结构
 
+```
 ├── docker-compose.yml          # Docker 编排配置文件
 ├── README.md                   # 项目说明文档
 ├── postgres/                   # PostgreSQL 相关文件
@@ -21,6 +22,7 @@
 │   └── conf/                   # 配置文件
 └── minio/                      # MinIO 相关文件
 └── data/                   # 数据文件
+```
 
 ## 操作指南
 
