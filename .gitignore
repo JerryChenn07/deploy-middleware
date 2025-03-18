@@ -8,8 +8,10 @@
 
 # 本地
 env
-
-
+minio/data
+mysql/data
+postgres/data
+redis/data
 
 # Local History for Visual Studio Code
 .history/
