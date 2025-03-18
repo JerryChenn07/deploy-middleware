@@ -6,6 +6,11 @@
 !.vscode/extensions.json
 *.code-workspace
 
+# 本地
+env
+
+
+
 # Local History for Visual Studio Code
 .history/
 

@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: bitnami/mysql:5.7
+    container_name: my_mysql
+    env_file:
+      - ./env
+    volumes:
+      - ./mysql/data:/bitnami/mysql/data
+      - ./mysql/conf/my_custom.cnf:/opt/bitnami/mysql/conf/my_custom.cnf:ro
+    ports:
+      - "33306:3306"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "/opt/bitnami/scripts/mysql/healthcheck.sh"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+
